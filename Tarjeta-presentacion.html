@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+    <style>
+
+        html {
+            font-size: 62.5%;
+        }
+
+        p, a, td{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 0.5rem;
+            font-size: 1.5rem;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+
+       .card {
+        background-color: lightcyan;
+        width: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+       }
+
+       .card img{
+        width: 100%;
+        overflow: hidden;
+       }
+
+       .img-portada {
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+       }
+
+       .profileimg-container{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+       }
+
+       .img-profile{
+        border-radius: 50%;
+        border: lightcyan 5px solid;
+       }
+
+       .name {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        bottom: 100px;
+       }
+
+        h1{
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 3rem;
+       }
+
+        .name p{
+        font-style: oblique;
+        line-height: 0.1rem;
+        font-size: 1.5rem;
+       }
+
+       .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 30px;
+        margin-bottom: -20px;
+       }
+
+       .location img{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        bottom: 13px;
+       }
+
+       .email img{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        bottom: 13px;
+       }
+       
+       .buttons a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+        bottom: 20px;
+       }
+
+       table{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+       }
+
+       td{
+        padding: 20px 10px 10px 10px;
+        border: lightgray 1px solid;
+        font-weight: 600;
+        font-size: 1.5rem;
+       }
+       
+       .tparrafo{
+        font-weight: lighter;
+        font-style: oblique;
+        padding-top: 5px;
+       }
+
+       .follow{
+        width: 100%;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        background-color: lightseagreen;
+        border: none;
+       }
+
+       .follow:hover{
+        cursor: pointer;
+       }
+
+    </style>
+</head>
+<body>
+    <section class="card">
+        <img class="img-portada" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="PORTADA">
+
+        <div class="profileimg-container">
+            <img class="img-profile" src="https://i.ibb.co/LRQVZ0T/Daniel.jpg" alt="Daniel">
+        </div>
+
+        <div class="name">
+            <h1>Daniel Munzon</h1>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="buttons">
+            <div class="location">
+                <img src="https://img.icons8.com/sf-ultralight-filled/25/null/google-maps-new.png"/>
+                <a href="#">Colombia</a>
+            </div>
+            <div class="email">
+                <img src="https://img.icons8.com/material-outlined/24/null/database-mail.png"/>
+                <a href="#">Send E-mail</a>
+            </div>
+            
+        </div>
+
+        <div>
+            <table>
+
+                <td>1,200 <p class="tparrafo">Followers</p></td>
+                <td>1,320 <p class="tparrafo">Following</p></td>
+                
+            </table>
+        </div>
+        
+        <button class="follow">Follow</button>
+
+    </section>
+</body>
+</html>
